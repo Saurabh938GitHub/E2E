@@ -22,7 +22,7 @@ public class base {
 	public WebDriver initializeDriver() throws IOException {
 		
 		prop= new Properties();
-		FileInputStream fis= new FileInputStream("C:\\Users\\Saurabh\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis= new FileInputStream("C:\\Users\\Saurabh\\Bijayini\\E2EProject\\src\\main\\java\\resources\\data.properties");
 	    prop.load(fis);
 	    String browserName=prop.getProperty("browser");
 	    if(browserName.equalsIgnoreCase("chrome")) {
@@ -46,7 +46,7 @@ public class base {
     public String getURL() throws IOException {
 		
 		prop= new Properties();
-		FileInputStream fis= new FileInputStream("C:\\Users\\Saurabh\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis= new FileInputStream("C:\\Users\\Saurabh\\Bijayini\\E2EProject\\src\\main\\java\\resources\\data.properties");
 	    prop.load(fis);
 	    String URL=prop.getProperty("url");
 	    return URL;

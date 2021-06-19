@@ -13,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class base {
 	
@@ -22,14 +23,16 @@ public class base {
 	public WebDriver initializeDriver() throws IOException {
 		
 		prop= new Properties();
-		FileInputStream fis= new FileInputStream("C:\\Users\\Saurabh\\Bijayini\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 	    prop.load(fis);
+	    //String browserName=System.getProperty("browser");
 	    String browserName=prop.getProperty("browser");
-	    if(browserName.equalsIgnoreCase("chrome")) {
-	    	System.setProperty("webdriver.chrome.driver",
-	    			"C:\\Users\\Saurabh\\Downloads\\chromedriver_win32\\chromedriver.exe");
-
-	     driver =new ChromeDriver();
+	    if(browserName.contains("chrome")) {
+	    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\java\\resources\\drivers\\chromedriver.exe");
+        ChromeOptions options= new ChromeOptions();
+        if(browserName.contains("headless"))
+        options.addArguments("headless");
+	     driver =new ChromeDriver(options);
 	    	
 	    }else if(browserName.equalsIgnoreCase("firefox")) {
 	    	
@@ -46,7 +49,7 @@ public class base {
     public String getURL() throws IOException {
 		
 		prop= new Properties();
-		FileInputStream fis= new FileInputStream("C:\\Users\\Saurabh\\Bijayini\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 	    prop.load(fis);
 	    String URL=prop.getProperty("url");
 	    return URL;

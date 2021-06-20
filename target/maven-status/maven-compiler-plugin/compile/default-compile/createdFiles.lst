@@ -1,5 +1,8 @@
 pageObjects\LandingPage.class
 Academy\E2EProject\App.class
+pageObjects\GreenCartLandingPage.class
 pageObjects\LoginPage.class
 resources\base.class
+pageObjects\GreenCartCountryPage.class
+pageObjects\GreenCartCartPage.class
 resources\ExtentReporterNG.class

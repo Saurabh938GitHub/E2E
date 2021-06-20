@@ -1,4 +1,8 @@
+stepDefinations\Snippet.class
 Academy\E2EProject\validateNavigationBar.class
+stepDefinations\stepDefination.class
+stepDefinations\GreenCartOrderStepFile.class
 Academy\E2EProject\Listeners.class
+cucumberOptions\TestRunner.class
 Academy\E2EProject\validateTitle.class
 Academy\E2EProject\HomePage.class

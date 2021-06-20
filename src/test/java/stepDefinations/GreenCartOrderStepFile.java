@@ -24,10 +24,17 @@ public class GreenCartOrderStepFile extends base {
 		driver.get(getURL());
 	}
 
-	@And("^User selects the vegetable$")
-	public void user_selects_the_vegetables() throws Throwable {
+	@And("^User selects the vegetable1$")
+	public void user_selects_the_vegetables1() throws Throwable {
 		GreenCartLandingPage lndPage= new GreenCartLandingPage(driver);
-	    lndPage.selectVegetable();
+	    lndPage.selectVegetable1();
+	    lndPage.clickCartIcon();
+	}
+	
+	@And("^User selects the vegetable2$")
+	public void user_selects_the_vegetables2() throws Throwable {
+		GreenCartLandingPage lndPage= new GreenCartLandingPage(driver);
+	    lndPage.selectVegetable2();
 	    lndPage.clickCartIcon();
 	}
 

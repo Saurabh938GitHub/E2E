@@ -22,10 +22,7 @@ public class GreenCartLandingPage {
 	By cartButton=By.cssSelector("a.cart-icon");
 	
 	
-	
-	
-	
-    public void selectVegetable() {
+	public void selectVegetable1() {
     	int j = 0; 
     	List<WebElement> li = driver.findElements(By.cssSelector("div[class='product'] h4"));
 		String[] veg = { "Brocolli", "Beetroot", "Beans" };
@@ -53,6 +50,34 @@ public class GreenCartLandingPage {
 			}
 		}
     
+	public void selectVegetable2() {
+    	int j = 0; 
+    	List<WebElement> li = driver.findElements(By.cssSelector("div[class='product'] h4"));
+		String[] veg = { "Cucumber", "Brinjal", "Carrot","Corn" };
+
+		for (int i = 0; i < li.size(); i++) {
+			WebElement a = li.get(i);
+			String name = a.getText();
+			String name1 = "";
+			String[] name2 = a.getText().split("-");
+			name1 = name2[0].trim();
+
+			List<String> x = Arrays.asList(veg);
+
+			if (x.contains(name1)) {
+				driver.findElements(By.cssSelector("div[class='product'] div[class='product-action'] button")).get(i)
+						.click();
+				;
+
+				j++;
+
+				if (j == veg.length) {
+					break;
+				}
+			}
+			}
+		}
+	
     public void clickCartIcon() throws InterruptedException {
     	driver.findElement(cartButton).click();
     	driver.findElement(checkOutButton).click();

@@ -1,5 +1,5 @@
 Feature: Login into Application
-
+@Test
 Scenario Outline: Positive test validating login
 Given Initialize the browser with chrome
 And Navigate to "http://qaclickacademy.com" Site

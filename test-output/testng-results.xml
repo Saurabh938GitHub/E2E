@@ -1,53 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12458" started-at="2021-06-16T03:44:57Z" finished-at="2021-06-16T03:45:09Z">
+  <suite name="Default suite" duration-ms="25252" started-at="2021-06-20T05:11:35Z" finished-at="2021-06-20T05:12:00Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@3c0ecd4b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="12458" started-at="2021-06-16T03:44:57Z" finished-at="2021-06-16T03:45:09Z">
-      <class name="Academy.E2EProject.HomePage">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Academy.E2EProject.HomePage@7b9a4292]" name="initialize" is-config="true" duration-ms="2510" started-at="2021-06-16T03:44:57Z" finished-at="2021-06-16T03:44:59Z">
+    <test name="Default test" duration-ms="25252" started-at="2021-06-20T05:11:35Z" finished-at="2021-06-20T05:12:00Z">
+      <class name="cucumberOptions.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@3c0ecd4b]" name="setUpClass" is-config="true" duration-ms="365" started-at="2021-06-20T05:11:35Z" finished-at="2021-06-20T05:11:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation1(java.lang.String, java.lang.String)[pri:0, instance:Academy.E2EProject.HomePage@7b9a4292]" name="basePageNavigation1" duration-ms="6989" started-at="2021-06-16T03:45:00Z" data-provider="getData" finished-at="2021-06-16T03:45:07Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@3c0ecd4b]" name="feature" duration-ms="24702" started-at="2021-06-20T05:11:35Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-06-20T05:12:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[abc@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
+                <![CDATA[To automate the flow of placing order on GreenKart website]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation1 -->
-        <test-method status="PASS" signature="basePageNavigation1(java.lang.String, java.lang.String)[pri:0, instance:Academy.E2EProject.HomePage@7b9a4292]" name="basePageNavigation1" duration-ms="2394" started-at="2021-06-16T03:45:07Z" data-provider="getData" finished-at="2021-06-16T03:45:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[xyz@gm.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[234567]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@3c0ecd4b]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2021-06-20T05:12:00Z" finished-at="2021-06-20T05:12:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation1 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.E2EProject.HomePage@7b9a4292]" name="teardown" is-config="true" duration-ms="448" started-at="2021-06-16T03:45:09Z" finished-at="2021-06-16T03:45:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Academy.E2EProject.HomePage -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -9,7 +9,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
 	features= "src/test/java/features",
-	glue="stepDefinations"
+	glue="stepDefinations",
+	tags="@GreenCart1"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 	

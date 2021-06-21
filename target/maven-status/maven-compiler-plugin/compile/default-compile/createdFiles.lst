@@ -1,8 +1,12 @@
 pageObjects\LandingPage.class
 Academy\E2EProject\App.class
+pageObjects\RahulShettyBillingPage.class
+pageObjects\RahulShettyLandingPage.class
 pageObjects\GreenCartLandingPage.class
 pageObjects\LoginPage.class
+pageObjects\RahulShettyCoursesPage.class
 resources\base.class
+pageObjects\RahulShettySelectionPage.class
 pageObjects\GreenCartCountryPage.class
 pageObjects\GreenCartCartPage.class
 resources\ExtentReporterNG.class

@@ -58,6 +58,16 @@ public class base {
 
 }
     
+public String getURL1() throws IOException {
+		
+		prop= new Properties();
+		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
+	    prop.load(fis);
+	    String URL=prop.getProperty("url1");
+	    return URL;
+
+}
+    
     public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException  {
     	TakesScreenshot ts= (TakesScreenshot)driver;
     	File source= ts.getScreenshotAs(OutputType.FILE);

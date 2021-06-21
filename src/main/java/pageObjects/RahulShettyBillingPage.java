@@ -35,6 +35,7 @@ public class RahulShettyBillingPage {
     	driver.findElement(coupon).click();
     	driver.findElement(couponValue).sendKeys("Saurabh");
     	driver.findElement(nameCard).sendKeys("Saurabh Mishra");
+    	System.out.println("Done");
     	//driver.findElement(numberCard).sendKeys("6069 8600 0908 5509");
 //    	js.executeScript(script, driver.findElement(numberCard), "6069 8600 0908 5509");
 //    	driver.findElement(numberCard).sendKeys(" ");
